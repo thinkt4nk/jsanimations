@@ -30,12 +30,17 @@ app.configure('production', function(){
 
 app.get('/', function(req, res){
   res.contentType('text/html');
-  res.sendfile('views/blinds.html');
+  res.sendfile('views/stage.html');
 });
 
 app.get('/character', function(req, res) {
   res.contentType('text/html');
   res.sendfile('views/character.html');
+});
+
+app.get('/scene/blinds', function(req, res) {
+  res.contentType('text/html');
+  res.sendfile('views/_blinds.html');
 });
 
 

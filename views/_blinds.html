@@ -1,0 +1,26 @@
+<!-- MAIN -->
+<div id="blinds" style="position:relative">
+  <div class="blind"></div>
+  <div class="blind"></div>
+  <div class="blind"></div>
+  <div class="blind"></div>
+  <div class="blind"></div>
+  <div class="blind"></div>
+  <div class="blind"></div>
+  <div class="blind"></div>
+  <div class="blind"></div>
+  <div class="blind"></div>
+  <div class="blind"></div>
+  <div class="blind"></div>
+</div>
+
+<!-- scripts concatenated and minified via ant build script-->
+<script src="javascripts/cycle.js"></script>
+<script src="javascripts/blinds.js"></script>
+<script>
+  $(function() {
+    $('#blinds .blind').blinds();
+  });
+</script>
+
+<!-- end scripts-->
