@@ -1,5 +1,5 @@
 body {
-  background: url(images/bg.jpg);
+  background: url(/images/bg.jpg);
   overflow: hidden;
 }
 #guy {
@@ -8,7 +8,7 @@ body {
   left: 400px;
   width: 164px;
   height: 343px;
-  background: url(images/guy.png);
+  background: url(/images/guy.png);
 }
 #guy-hat {
   position: absolute;
@@ -16,7 +16,7 @@ body {
   left: 10px;
   width: 110px;
   height: 103px;
-  background: url(images/hat.png) no-repeat;
+  background: url(/images/hat.png) no-repeat;
   z-index: 10;
 }
 #guy-eye-left-bounds {
@@ -30,7 +30,7 @@ body {
   position: absolute;
   width: 14px;
   height: 17px;
-  background: url(images/guy-eye-left.png);
+  background: url(/images/guy-eye-left.png);
   -webkit-transition: top 300ms ease-out, left 300ms ease-out;
 }
 #guy-eye-right-bounds {
@@ -44,7 +44,7 @@ body {
   position: absolute;
   width: 9px;
   height: 11px;
-  background: url(images/guy-eye-right.png);
+  background: url(/images/guy-eye-right.png);
   -webkit-transition: top 100ms ease-out, left 100ms ease-out;
 }
 #guy-shadow {
@@ -53,7 +53,7 @@ body {
   left: 70px;
   width: 102px;
   height: 47px;
-  background: url(images/guy-shadow.png) no-repeat;
+  background: url(/images/guy-shadow.png) no-repeat;
   background-size: 90px 40px;
 }
 #hill-3 {
@@ -62,7 +62,7 @@ body {
   left: 381px;
   width: 446px;
   height: 314px;
-  background: url(images/hill-3.png) no-repeat;
+  background: url(/images/hill-3.png) no-repeat;
 }
 #hill-2 {
   position: absolute;
@@ -70,7 +70,7 @@ body {
   left: 219px;
   width: 302px;
   height: 166px;
-  background: url(images/hill-2.png) no-repeat;
+  background: url(/images/hill-2.png) no-repeat;
   z-index: 5;
 }
 #hill-1 {
@@ -79,7 +79,7 @@ body {
   left: 366px;
   width: 486px;
   height: 165px;
-  background: url(images/hill-1.png) no-repeat;
+  background: url(/images/hill-1.png) no-repeat;
   z-index: 10;
 }
 /*
@@ -107,7 +107,7 @@ body {
   left: 540px;
   width: 53px;
   height: 60px;
-  background: url(images/cat.png) no-repeat;
+  background: url(/images/cat.png) no-repeat;
   z-index: 20;
 }
 #fence {
@@ -116,7 +116,7 @@ body {
   left: 406px;
   width: 396px;
   height: 272px;
-  background: url(images/fence.png) no-repeat;
+  background: url(/images/fence.png) no-repeat;
   z-index: 15;
 }
 #fence-shadow {
@@ -125,7 +125,7 @@ body {
   left: 276px;
   width: 121px;
   height: 111px;
-  background: url(images/fence-shadow.png) no-repeat;
+  background: url(/images/fence-shadow.png) no-repeat;
 }
 .grass {
   z-index: 25;
@@ -136,7 +136,7 @@ body {
   left: 614px;
   width: 20px;
   height: 46px;
-  background: url(images/grass.png) no-repeat;
+  background: url(/images/grass.png) no-repeat;
 }
 #grass-2,
 #grass-3,
@@ -146,7 +146,7 @@ body {
   left: 738px;
   width: 10px;
   height: 22px;
-  background: url(images/grass-tiny.png) no-repeat;
+  background: url(/images/grass-tiny.png) no-repeat;
 }
 #grass-3 {
   top: 430px;
@@ -178,14 +178,14 @@ body {
   height: 20px;
 /*  border: 1px solid red;*/
   background-repeat: no-repeat;
-  background-image: url(images/bird-0.png);
+  background-image: url(/images/bird-0.png);
 }
-.bird-0 { background-image: url(images/bird-0.png); }
-.bird-1 { background-image: url(images/bird-1.png); }
-.bird-2 { background-image: url(images/bird-2.png); }
-.bird-3 { background-image: url(images/bird-3.png); }
-.bird-4 { background-image: url(images/bird-4.png); }
-.bird-5 { background-image: url(images/bird-5.png); }
+.bird-0 { background-image: url(/images/bird-0.png); }
+.bird-1 { background-image: url(/images/bird-1.png); }
+.bird-2 { background-image: url(/images/bird-2.png); }
+.bird-3 { background-image: url(/images/bird-3.png); }
+.bird-4 { background-image: url(/images/bird-4.png); }
+.bird-5 { background-image: url(/images/bird-5.png); }
 @-webkit-keyframes wind {
   from {
     -webkit-transform: skew(0) rotate(-20deg);

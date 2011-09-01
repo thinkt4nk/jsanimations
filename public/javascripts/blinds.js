@@ -24,7 +24,7 @@
         }
         var img = 
           $('<img/>')
-            .attr('src','public/images/blind_' + position + '.gif')
+            .attr('src','/images/blind_' + position + '.gif')
             .css('position','absolute')
             .css('top','0')
             .css('left',this.offset * 20 + 'px')

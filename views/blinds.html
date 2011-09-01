@@ -22,7 +22,7 @@
 
   <!-- CSS: implied media=all -->
   <!-- CSS concatenated and minified via ant build script-->
-  <link rel="stylesheet" href="public/boilerplate.css">
+  <link rel="stylesheet" href="stylesheets/boilerplate.css">
   <!-- end CSS-->
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
@@ -30,7 +30,12 @@
   <!-- All JavaScript at the bottom, except for Modernizr / Respond.
        Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
        For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
-  <script src="public/js/modernizr-2.0.6.min.js"></script>
+  <script src="javascripts/modernizr-2.0.6.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <!--
+  <script src="javascripts/underscore.js"></script>
+  <script src="javascripts/scene_loader.js"></script>
+  -->
 </head>
 
 <body>
@@ -41,20 +46,34 @@
     </header>
     <div id="main" role="main">
       
-      <!-- MAIN -->
-      <div id="blinds" style="position:relative">
-        <div class="blind"></div>
-        <div class="blind"></div>
-        <div class="blind"></div>
-        <div class="blind"></div>
-        <div class="blind"></div>
-        <div class="blind"></div>
-        <div class="blind"></div>
-        <div class="blind"></div>
-        <div class="blind"></div>
-        <div class="blind"></div>
-        <div class="blind"></div>
-        <div class="blind"></div>
+      <div id="scene">
+        <!-- MAIN -->
+        <div id="blinds" style="position:relative">
+          <div class="blind"></div>
+          <div class="blind"></div>
+          <div class="blind"></div>
+          <div class="blind"></div>
+          <div class="blind"></div>
+          <div class="blind"></div>
+          <div class="blind"></div>
+          <div class="blind"></div>
+          <div class="blind"></div>
+          <div class="blind"></div>
+          <div class="blind"></div>
+          <div class="blind"></div>
+        </div>
+
+        <!-- scripts concatenated and minified via ant build script-->
+        <script src="javascripts/move.js"></script>
+        <script src="javascripts/cycle.js"></script>
+        <script src="javascripts/blinds.js"></script>
+        <script>
+          $(function() {
+            $('#blinds .blind').blinds();
+          });
+        </script>
+
+        <!-- end scripts-->
       </div>
 
     </div>
@@ -64,18 +83,6 @@
   </div> <!--! end of #container -->
 
 
-  <!-- JavaScript at the bottom for fast page loading -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <!-- scripts concatenated and minified via ant build script-->
-  <script src="public/js/move.js"></script>
-  <script src="public/js/cycle.js"></script>
-  <script src="public/js/blinds.js"></script>
-  <script>
-    $(function() {
-      $('#blinds .blind').blinds();
-    });
-  </script>
-  <!-- end scripts-->
 
 	
   <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
