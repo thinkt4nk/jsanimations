@@ -140,6 +140,8 @@
     return this;
   };
 
+  exports.EventEmitter = EventEmitter;
+
   /**
    * Initialize a new `Move` with the given `el`.
    *

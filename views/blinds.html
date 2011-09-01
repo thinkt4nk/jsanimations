@@ -30,19 +30,24 @@
   <!-- All JavaScript at the bottom, except for Modernizr / Respond.
        Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
        For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
-  <script src="javascripts/modernizr-2.0.6.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <!--
-  <script src="javascripts/underscore.js"></script>
-  <script src="javascripts/scene_loader.js"></script>
-  -->
+      <script src="javascripts/modernizr-2.0.6.min.js"></script>
+      <!-- jQuery -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+      <!-- underscore -->
+      <script src="javascripts/underscore/underscore-min.js"></script>
+      <!-- Move and EventEmitter -->
+      <script src="javascripts/move.js"></script>
+      <!-- SceneLoader -->
+      <script src="javascripts/scene_loader.js"></script>
+      <!-- ContextMenu -->
+      <script src="javascripts/context_menu.js"></script>
+  <!-- end global js libs -->
 </head>
 
 <body>
 
   <div id="container">
     <header>
-
     </header>
     <div id="main" role="main">
       
@@ -64,12 +69,34 @@
         </div>
 
         <!-- scripts concatenated and minified via ant build script-->
-        <script src="javascripts/move.js"></script>
         <script src="javascripts/cycle.js"></script>
         <script src="javascripts/blinds.js"></script>
         <script>
           $(function() {
             $('#blinds .blind').blinds();
+            $(document).ContextMenu([
+              {
+                display: 'oneAction',
+                action: 'one',
+                onClick: function() {
+                  alert('one');
+                }
+              },
+              {
+                display: 'twoAction',
+                action: 'two',
+                onClick: function() {
+                  alert('two');
+                }
+              },
+              {
+                display: 'threeAction',
+                action: 'three',
+                onClick: function() {
+                  alert('three');
+                }
+              }
+            ]);
           });
         </script>
 
