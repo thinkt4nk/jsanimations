@@ -26,6 +26,7 @@
                             )
                             .appendTo('body')
                             .hide();
+    this.menu_container.draggable().resizable();
     if( actions.length > 0 )
     {
       _.each(actions,function(action) {
