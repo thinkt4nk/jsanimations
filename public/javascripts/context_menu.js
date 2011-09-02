@@ -85,18 +85,9 @@
         {
           exports._contextmenu = new ContextMenu(actions);
           // bind to show
-          document.onclick = function(e) {
-            var isRightMB;
-            e = e || window.event;
-            e.preventDefault();
-
-            if ('which' in e) // Gecko, Webkit
-              isRightMB = e.which == 3;
-            else if ('button' in e) // IE
-              isRightMB = e.button == 2;
-
-            if( isRightMB )
-              exports._contextmenu.show();
+          document.oncontextmenu = function(e) {
+            exports._contextmenu.show();
+            return false;
           };
         }
       });
